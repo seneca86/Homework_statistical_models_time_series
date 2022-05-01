@@ -21,5 +21,7 @@ Read the file `.lesson/assets/NEW-DATA-1.T15.txt` and put it in a dataframe. I w
 * use the model to predict the values for the last piece of the observarions (10% or whatever you chose)
 * plot both the actuals and the predictions
 
+What do you think of the prediction in the short run? And in the long run? How could it be improved?
+
 ## (2)
 Do the same thing for the file `.lesson/assets/fred_unemployment.csv`.
