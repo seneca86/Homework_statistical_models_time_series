@@ -57,6 +57,7 @@ plot_pacf(df[var], lags=20)
 plt.savefig(directory + "/pacf_actuals")
 pacf_values = pacf(df[var])
 print(pacf_values)
+plt.clf()
 # %%
 split = 2500
 train = df.iloc[0:split, :]
@@ -99,6 +100,7 @@ plot_pacf(unemp[var], lags=20)
 plt.savefig(directory + "/pacf_actuals_unemp")
 pacf_values = pacf(unemp[var])
 print(pacf_values)
+plt.clf()
 # %%
 split = 850
 train = unemp.iloc[0:split, :]
