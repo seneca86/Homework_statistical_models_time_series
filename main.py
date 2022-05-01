@@ -47,7 +47,7 @@ df = df_raw.rename(
     date=lambda x: pd.to_datetime(x.date + "-" + x.time, infer_datetime_format=True)
 )
 # %%
-var = 'light'
+var = "light"
 plt.plot(df.date, df[var], label="actuals")
 plt.legend()
 plt.savefig(directory + "/actuals")
@@ -87,11 +87,9 @@ unemp = unemp_raw.rename(
         "UNRATE": "rate",
     },
     axis="columns",
-).assign(
-    date=lambda x: pd.to_datetime(x.date, infer_datetime_format=True)
-)
+).assign(date=lambda x: pd.to_datetime(x.date, infer_datetime_format=True))
 # %%
-var = 'rate'
+var = "rate"
 plt.plot(unemp.date, unemp[var], label="actuals")
 plt.legend()
 plt.savefig(directory + "/actuals_unemp")
