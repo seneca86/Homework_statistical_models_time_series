@@ -78,6 +78,7 @@ plt.plot(train.date, train[var], label="actuals", color="black")
 plt.plot(test.date, preds, label="autoarima", color="blue")
 plt.legend()
 plt.savefig(directory + "/autoarima")
+plt.clf()
 # %%
 unemp_raw = pd.read_csv(".lesson/assets/fred_unemployment.csv", sep=",")
 unemp = unemp_raw.rename(
@@ -121,4 +122,5 @@ plt.plot(train.date, train[var], label="actuals", color="black")
 plt.plot(test.date, preds, label="autoarima", color="blue")
 plt.legend()
 plt.savefig(directory + "/autoarima_unemp")
+plt.clf()
 # %%
