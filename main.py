@@ -71,7 +71,7 @@ with StepwiseContext(max_dur=15):
         seasonal=True,
     )
 # %%
-print(f"model.summary()")
+print(f"{model.summary()}")
 preds, conf_int = model.predict(n_periods=df.shape[0] - split, return_conf_int=True)
 
 # %%
